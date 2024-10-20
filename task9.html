@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            height: 670px;
+            background: linear-gradient(yellow,orange,black);
+            position: relative;
+        }
+        .sun
+        {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 255, 20);
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 550px;
+            /* border: 3px solid black; */
+        }
+        .shadow
+        {
+            width: 180px;
+            height: 180px;
+            background-color:orangered;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 550px;
+            z-index: 1;
+            /* border: 3px solid black; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shadow">  </div>
+        <div class="sun"></div>
+    </div>
+</body>
+</html>

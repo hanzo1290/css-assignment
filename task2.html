@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header
+        {
+            width: 100%;
+            height: 500px;
+            
+            background:
+            
+             url('https://bugei.com/cdn/shop/files/image_a40a831e-babb-4056-b1cf-4e61f5e253dc_1024x1024@2x.jpg?v=1695745964');
+             background-size: 100% 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+            
+           
+           
+
+        }
+        .mainnavbar
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .header li a
+        {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+           
+        }
+        .header li
+        {
+            display: inline;
+            padding: 20px;
+            position: relative;
+        }
+        .header li a:hover
+        {
+            color: brown;
+        }
+        .header .line
+        {
+            position: absolute;
+            width: 0%;
+            height: 3px;
+           top: 100%;
+           left: 0%;
+            background-color: red;
+            display: inline;
+            transition: .41s;
+
+        }
+        .header li:hover .line
+        {
+            width: 100%;
+        }
+        .header img
+        {
+            color: white;
+            background-color: darkcyan;
+            width: 80px;
+            height: 80px;
+            margin-left: 120px;
+        }
+        .anchor
+        {
+            margin-left: 48%;
+            margin-top: -20px;
+            
+          
+        }
+        .fa-anchor
+        {
+            border: 3px solid white;
+            color: red;
+            padding: 10px;
+            background-color: white;
+            border-radius: 50%;
+           
+            box-shadow: 3px 3px 7px black;
+            z-index: 1;
+          
+        }
+        .info
+        {
+            color: white;
+            text-align: center;
+        }
+        .info h1
+        {
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+        .info p:first-child
+        {
+
+           text-transform: capitalize;
+            margin-top: 100px;
+        }
+        .info p:nth-child(3)
+        {
+            text-transform: capitalize;
+            width: 400px;
+            margin: auto;
+        }
+        .info button
+        {
+            margin-top: 30px;
+            margin-left: 5px;
+            padding: 5px;
+            border: none;
+            
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        .info :nth-child(4)
+        {
+            background-color: orangered;
+            border: 1px solid orangered;
+        }
+        .fa-glasses,.fa-heart,.fa-lightbulb,.fa-message
+        {
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .cards
+        {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card1 p
+        {
+            width: 200px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+           <div class="mainnavbar">
+            <div class="logo"><img src="wolf.svg" alt=""></div>
+            <div class="navbar">
+                <ul>
+                    
+                    <li><a href="">home</a><div class="line"></div></li>
+                    <li><a href="">about us</a><div class="line"></div></li>
+                    <li><a href="">portfolio</a><div class="line"></div></li>
+                    <li><a href="">Pricing</a><div class="line"></div></li>
+                    <li><a href="">team</a><div class="line"></div></li>
+                    <li><a href="">blog</a><div class="line"></div></li>
+                    <li><a href="">contact</a><div class="line"></div></li>
+
+                </ul>
+            </div>
+           </div>
+            <div class="info">
+                <p>our clients are our first priority</p>
+                <h1>welcome to sky</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, possimus dolore. Architecto quos dignissimos maxime quasi perspiciatis veniam eos laboriosam.</p>
+                <button>Get Started Now</button><button>Learn More</button>
+            </div>
+           
+        </div>
+        <div class="content">
+            <div class="anchor"><i class="fa-solid fa-anchor"></i></div>
+            <div class="cards">
+                <div class="card1">
+                    <div class="icon">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nobis.</p>
+                </div>
+
+
+
+                <div class="card1">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nobis.</p>
+                </div>
+
+
+
+                <div class="card1">
+                    <div class="icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nobis.</p>
+                </div>
+
+
+
+                <div class="card1">
+                    <div class="icon">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nobis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

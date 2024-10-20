@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* border: 3px solid rgb(0, 119, 255); */
+            padding: 40px;
+        }
+        .navbar
+        {
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            text-transform: uppercase;
+            
+        }
+        .navbar li
+        {
+            font-size: 13px;
+        }
+        .navbar li:hover
+        {
+            color:blueviolet;
+            font-size: 13px;
+        }
+        .navbar i
+        {
+            margin-left: 7px;
+        }
+        .navbar ul
+        {
+            list-style: none;
+        }
+        .navbar h3
+        {
+            text-align: center;
+            margin-left: 30px;
+        }
+        .galary
+        {
+            background-color: black;
+            /* border: 3px solid rgb(4, 255, 0); */
+        }
+        .row1
+        {
+            display: grid;
+            
+            /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            gap: 10px;
+            
+            
+        }
+        .img1
+        {
+            width: 600px;
+            height: 200px;
+            background:
+             url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .img2
+        {
+            width: 300px;
+            height: 200px;
+            background: 
+             url('https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .row2
+        {
+            display: grid;
+            
+            /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px;
+            gap: 10px;
+        }
+        .img3
+        {
+            width: 300px;
+            height: 200px;
+            background: 
+             url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .img4
+        {
+            width: 400px;
+            height: 200px;
+            background: 
+             url('https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .img5
+        {
+            width: 300px;
+            height: 200px;
+            background: 
+             url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNQQ7fhk27ymnygeeOof3wJ0lu-4Z18qKlA&s');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .row3
+        {
+            display: grid;
+            
+            /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            gap: 10px;
+        }
+        .img6
+        {
+            width: 500px;
+            height: 200px;
+            background: 
+             url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .img7
+        {
+            width: 500px;
+            height: 200px;
+            background: 
+             url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNQQ7fhk27ymnygeeOof3wJ0lu-4Z18qKlA&s');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .row4
+        {
+            display: grid;
+            
+            /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px;
+            gap: 0px;
+        }
+        .img8
+        {
+            width: 300px;
+            height: 200px;
+            background: 
+             url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .img9
+        {
+            width: 300px;
+            height: 200px;
+            background: 
+             url('https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        .img0
+        {
+            width: 300px;
+            height: 200px;
+            background: 
+             url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNQQ7fhk27ymnygeeOof3wJ0lu-4Z18qKlA&s');
+            background-size: 100% 100%;
+            /* border: 3px solid purple; */
+        }
+        @media(max-width:1258px)
+        {
+
+            .row1,.row2,.row3,.row4
+            {
+                display: block;
+            }
+            .img0,.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9
+            {
+                
+                width: 100%;
+            }
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="galary">
+            <div class="row1">
+                <!-- <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="">
+                <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" alt=""> -->
+                <div class="img1"></div>
+                <div class="img2"></div>
+            </div>
+            <div class="row2">
+                <div class="img3"></div>
+                <div class="img4"></div>
+                <div class="img5"></div>
+
+            </div>
+            <div class="row3">
+                <div class="img6"></div>
+                <div class="img7"></div>
+            </div>
+            <div class="row4">
+                <div class="img8"></div>
+                <div class="img9"></div>
+                <div class="img0"></div>
+
+            </div>
+        </div>
+        <div class="navbar">
+            <h3>Shuttur</h3>
+            <ul>
+                <li>Home</li>
+                <li>Photos</li>
+                <li>Bio</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
